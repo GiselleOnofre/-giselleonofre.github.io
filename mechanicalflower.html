@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<title>Mechanical Flower</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/w3.css">
+
+<style>
+body, html {height: 100%}
+
+.menu {display: none}
+/*Background Image*/
+.bgimg {
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("images/flowersonar.JPG");
+  min-height: 100%;
+}
+
+
+</style>
+<body>
+
+<!-- NEW NAV  -->
+
+<div class="w3-top">
+	<div class="w3-bar w3-wide w3-padding ">
+	     <a href="index.html" class="w3-bar-item w3-namefont w3-text-white w3-button">Giselle Onofre</a>
+	    <!-- Float links to the right. Hide them on small screens -->
+	    <div class="w3-right w3-hide-small">
+		    <a href="/index.html#projects" class="w3-bar-item w3-myfont w3-text-white w3-button">Projects</a>
+		     <!-- ABOUT LINK NOT FLESHED OUT ...YEEETTTT!
+          <a href="AboutMe.html" class="w3-bar-item w3-myfont w3-text-white w3-button">About</a>-->
+	    </div>
+	</div>
+</div>
+
+
+<!-- HEADER with background image -->
+<header class="bgimg w3-display-container " id="home">
+  <div class="w3-display-middle w3-padding-64">
+   <!--button <p><a href="#menu" class="w3-button w3-small w3-white">Let me see the menu</a></p>
+  </div> -->
+  <div class="w3-center  w3-margin-bottom-64">
+    <span class="w3-text-white" style="font-size:40px"><b>Mechanically Blooming Flower</b></span> <br>
+    <span class="w3-text-white" style="font-size:20px">Mechatronics Fall 2019</span>
+   
+  </div>
+  </div>
+</header>
+
+<!--PROJECT OVERVIEW-->
+
+
+<div class="w3-container w3-white w3-padding-32 w3-grayscale">
+    <div class="w3-content w3-center">
+    <h1 class = "rolefont"> Roles: Mechanical Design Lead, Programmer, Art Direction</h1>
+    <h5 class = "w3-center w3-padding-32">
+        At Rowan University, as part of my Mechatronics 2019 course, my team and
+        I were given the creative freedom to choose our own project. This project
+        was an intersection between two of my non-engineering interests: environmental
+        sustainability, and art. The project was inspired by Jiri Praus's 'Ever Blooming
+        Mechanical Tulip'. My team and I were all intrigued by this intersection between
+        Arduino IDE programming and art since the majority of our projects are usually 
+        just made to fulfill a function. This project was new to us since it allowed 
+        us to tap into the creative side of engineering. Rather than using wire 
+        sculpting as our medium, I used 3D printing technology and SolidWorks modeling
+        to create the form of our mechanical flower and to model its blooming 
+        function in a CAD assembly. Overall, I'd have to say this is my favorite project
+        I've done thus far. My future plans for this design is to downsize it to reduce
+        printing time and material costs for the purpose of mass-manufacturing for my
+        design for a giveaway prize at a Rowan University networking event. 
+    </h5>
+    </div>
+</div>
+
+
+<!-- SOLIDWORKS MODELING -->
+<div class="w3-container w3-padding-16 w3-teal" >
+   <!--PHOTO Left side; DESCRIPTION right side-->
+  <div class="w3-row w3-padding-64" id="about">
+
+    <div class="w3-half w3-center w3-padding-large w3-hide-small">
+     <img src="/images/FlowerRender.JPG" class="w3-round w3-image polaroid" alt="Flower Render" width="600" height="750">
+    </div>
+
+    <div class="w3-half " >
+      <span class="w3-text-white" style="font-size:40px;"><b>SolidWorks Modeling & Assembly</b></span> 
+      <h5 class = "w3-center" style = "max-width:720px">
+          For the design phase of this project, I researched various mechanical blooming mechanisms
+          before I settled on a pushing rod mechanism similar to the one Jiri used. To actuate my 
+          design mechanically, I created a center piece containing a hex nut that could travel up 
+          along a threaded rod. The rod is connected to a servo motor via a motor adapter piece. 
+          It was daunting translating the design into SolidWorks due to the dimensional accuracy
+          necessary for the petals to close flush and to open fully via the pushing rod. But I 
+          was able to develop a simple method of creating a symmetrical petal shape in SolidWorks
+          and placing all my components in an assembly allowed me to troubleshoot any issues. 
+      </h5>
+    </div>
+  </div>
+</div>
+
+<!-- FLOWER ART -->
+<div class="w3-container w3-padding-16 w3-amber " >
+  <!--Three Photo Row-->
+  <div class="W3-padding-64" id="about">
+
+   <div class="w3-third w3-center w3-padding-large w3-hide-small">
+    <img src="/images/flowerart.jpg" class="w3-round w3-image polaroid" alt="Flower Art" width="600" height="750">
+   </div>
+
+   <div class="w3-third w3-padding-large w3-hide-small " >
+    <img src="/images/ClearFlowerPic.JPG" class="w3-round w3-image polaroid" alt="Flower Art" width="600" height="750">
+   </div>
+
+   <div class="w3-third w3-padding-large w3-hide-small" >
+    <img src="/images/flowersketch.JPG" class="w3-round w3-image polaroid" alt="Flower Art" width="600" height="750">
+   </div>
+
+  </div>
+
+   <div class = "w3-center w3-content2 w3-container">
+   <span class=" w3-center" style="font-size:40px;"><b>Art Meets Engineering</b></span> 
+   <h5 class = "">
+       The team and I could have called it a day after we 3D printed the flower parts... but 
+       what's the fun in that! After assembling the flower, my teammate and good friend Sara had the 
+       brilliant idea of making the flower look life-like by sleeving the 3D printed petals
+       with fabric petals from JoAnn's Fabrics. We placed the flower in a painted shoebox to mimic 
+       the look of a planter box. The planter box also served the duel purpose of housing all of
+       our electronic components. Between the electronics and the flower, was a styrofoam layer
+       that we painted brown to mimic the look of dirt. We also added an additional non-blooming 
+       garden alongside the central flower. 
+   </h5>
+  </div>
+</div>
+
+<!-- ELECTRONICS-->
+<div class="w3-container w3-padding-16 w3-blue-grey" >
+  <!--PHOTO Left side; DESCRIPTION right side-->
+ <div class="w3-row w3-padding-64" id="about">
+
+   <div class="w3-half w3-center w3-padding-large w3-hide-small">
+    <img src="/images/flowertronics.JPG" class="w3-round w3-image polaroid" alt="Flower Render" width="600" height="750">
+   </div>
+
+   <div class="w3-half w3-container" >
+     <span class="w3-text-white w3-center" style="font-size:40px;"><b>Putting the Tronics in Mechatronics</b></span> 
+     <h5 class = "w3-center" style = "max-width:770px" >
+         The project would have been kinda boring if we just twisted our threaded rod manually. Plus
+         we'd be missing the 'Tronics' of the mechatronics course. Actuating the flower was simple 
+         once the design was done. I attached a stepper motor to the motor adapter piece and 
+         programmed the stepper motor to turn the flower into its open and closed position when an
+         Ultrasonic Sensor detected motion in its surroundings. We also programmed a speaker
+         to begin playing the 'Howl's Moving Castle Theme' song once the flower began blooming by 
+         programming each individual note. For a dash of pizzazz, we added in some extra LED's amongst
+         the non-functioning flowers to create an LED flower garden. 
+         </h5>
+     <div class = "w3-center" style = "max-width:770px">
+         <a class= "button w3-round w3-white polaroid" href="https://youtu.be/JQbrcqSMTUk">Check it Out!</a>
+    </div>
+
+   </div> 
+   </div> 
+ </div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-xxlarge">
+  <h5>© Giselle Onofre 2020</h5>
+  <h5>All Rights Reserved.</h5>
+</footer>
+
+
+</body>
+</html>

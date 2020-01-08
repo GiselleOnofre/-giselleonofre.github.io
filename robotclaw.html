@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<title>Robotic Claw</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/w3.css">
+
+<style>
+body, html {height: 100%}
+
+.menu {display: none}
+/*Background Image*/
+.bgimg {
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("images/clawbg2.JPG");
+  min-height: 100%;
+}
+
+
+</style>
+<body>
+
+<!-- NEW NAV  -->
+
+<div class="w3-top">
+	<div class="w3-bar w3-wide w3-padding ">
+	     <a href="index.html" class="w3-bar-item w3-namefont w3-text-white w3-button">Giselle Onofre</a>
+	    <!-- Float links to the right. Hide them on small screens -->
+	    <div class="w3-right w3-hide-small">
+		    <a href="/index.html#projects" class="w3-bar-item w3-myfont w3-text-white w3-button">Projects</a>
+		     <!-- ABOUT LINK NOT FLESHED OUT ...YEEETTTT!
+          <a href="AboutMe.html" class="w3-bar-item w3-myfont w3-text-white w3-button">About</a>-->
+	    </div>
+	</div>
+</div>
+
+
+<!-- HEADER with background image -->
+<header class="bgimg w3-display-container " id="home">
+  <div class="w3-display-middle w3-padding-64">
+   <!--button <p><a href="#menu" class="w3-button w3-small w3-white">Let me see the menu</a></p>
+  </div> -->
+  <div class="w3-center  w3-margin-bottom-64">
+    <span class="w3-text-white" style="font-size:40px"><b>Autonomous Robotic Claw</b></span> <br>
+    <span class="w3-text-white" style="font-size:20px">Introduction to Mechanical Design 2018</span>
+   
+  </div>
+  </div>
+</header>
+
+<!--PROJECT OVERVIEW-->
+<div class="w3-container w3-white w3-padding-32 w3-grayscale">
+  <div class="w3-content ">
+  <h1 class = "w3-center rolefont">Skills: Mechanical Design, CAD Modeling, Laser Cutting, Programming, Soldering</h1>
+  <h5 style = "text-align:left" class = "w3-padding-32">
+    This is the first engineering project I've ever done and the most challenging one for 
+    that very reason. It introduced me to my first machining process on the
+    laser cutter, SolidWorks modeling, linkage design, Arduino IDE programming, soldering
+    PCB boards, and 3D printing. We were provided with three servo actuators and one ultrasonic
+    sensor. The ultimate goal of this project was to design a fully autonomous claw mechanism
+    meeting the following requirements
+        <ul class = "w3-left"> 
+          <li>Design and 3D print a SolidWorks model of the object to be grasped</li>
+          <li>Design a claw and claw lifter using at least 1 fourbar linkage</li>
+          <li>Design a tower and rotation mechanism for the claw that will move the object
+              from one drop zone to the next drop zone in a 90 degree rotation</li>
+          <li>Program the lifter mechanism to pick up the object and the rotation mechanism 
+              to move the object when it is placed in the designated drop zone. </li>
+          
+        </ul>
+
+  </h5>
+</div>
+  </div>
+</div>
+
+<!-- SOLIDWORKS MODELING -->
+<div class="w3-container w3-padding-16 w3-indigo" >
+   <!--PHOTO Left side; DESCRIPTION right side-->
+  <div class="w3-row w3-padding-64" id="about">
+
+    <div class="w3-half w3-center w3-padding-large w3-hide-small">
+     <img src="/images/clawobject2.JPG" class="w3-round w3-image polaroid" alt="Flower Render" width="600" height="750">
+    </div>
+
+    <div class="w3-half " >
+      <span class="w3-text-white" style="font-size:40px;"><b>The Claw Object</b></span> 
+      <h5 class = "w3-center" style = "max-width:720px">
+          For the first part of the project, my team and I brainstormed an easy object for us to
+          pick up. The only constraints were that it fit within a 1.5" x 1.5" cube. We determined
+          from the start that having a purse like design to the cube would make it easy for the claw
+          to grab. I modeled it in SolidWorks by creating an 'X shape with 4 loops on each side through which
+          the claw grippers could go through. To minimize weight, I created a curved profile at the
+          bottom and shelled out the inside of the object. I designed my own supports on the inside of 
+          the object rather than using the support generator in Cura. My team and I would later design
+          our claw mechanism based on this object. 
+      </h5>
+    </div>
+  </div>
+</div>
+
+<!-- FLOWER ART -->
+<div class="w3-container w3-padding-16 w3-deep-orange " >
+  <!--Three Photo Row-->
+  <div class="W3-padding-64" id="about">
+
+   <div class="w3-third w3-center w3-padding-large w3-hide-small">
+    <img src="/images/clawgripperrender.JPG" class="w3-round w3-image polaroid" alt ="claw gripper" width="600" height="750">
+   </div>
+
+   <div class="w3-third w3-padding-large w3-hide-small " >
+    <img src="/images/lifterrender.JPG" class="w3-round w3-image polaroid" alt="lifter" width="600" height="750">
+   </div>
+
+   <div class="w3-third w3-padding-large w3-hide-small" >
+    <img src="/images/clawrender2.JPG" class="w3-round w3-image polaroid" alt="rotating tower" width="600" height="750">
+   </div>
+
+  </div>
+
+   <div class = "w3-center w3-content2 w3-container">
+   <span class=" w3-center" style="font-size:40px;"><b>SolidWorks Modeling</b></span> 
+   <h5 class = "">
+       The project was split into to three deliverables: the claw gripper, the claw lifter, and
+       the claw base rotation mechanism. The claw gripper and the claw lifter were both actuated by
+       a servo controlling a four-bar linkage mechanism, and the rotation mechanism was comprised
+       of two gears also controlled by a servo motor. The rotation mechanism was designed around
+       a tower that was comprised of four parts. For the tower, my team and I came up with a 
+       puzzle piece design of 4 rectangular walls that we epoxyed together to assemble. 
+   </h5>
+  </div>
+</div>
+
+<!-- ELECTRONICS-->
+<div class="w3-container w3-padding-16 w3-purple" >
+  <!--PHOTO Left side; DESCRIPTION right side-->
+ <div class="w3-row w3-padding-64" id="about">
+
+   <div class="w3-half w3-center w3-padding-large w3-hide-small">
+    <img src="/images/clawfinal.JPG" class="w3-round w3-image polaroid" alt="Flower Render" width="600" height="750">
+   </div>
+
+   <div class="w3-half w3-container" >
+     <span class="w3-text-white w3-center" style="font-size:40px;"><b>The Final Product</b></span> 
+     <h5 class = "w3-center" style = "max-width:770px" >
+        This project was by far the most stressful and most challenging project I've ever done
+        but it is also one of the most rewarding projects I've ever done. From my professor,
+        teammates, and classmates I learned about the ingenuity that comes with engineering 
+        design. 
+      
+         </h5>
+     <div class = "w3-center" style = "max-width:770px">
+         <a class= "button w3-round w3-white polaroid" href="https://youtu.be/CcfSWSFIV1Q">Check it Out!</a>
+    </div>
+
+   </div> 
+   </div> 
+ </div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-xxlarge">
+  <h5>© Giselle Onofre 2020</h5>
+  <h5>All Rights Reserved.</h5>
+</footer>
+
+
+</body>
+</html>

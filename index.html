@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<title>Giselle Onofre</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/w3.css">
+
+<style>
+body, html {height: 100%}
+
+.menu {display: none}
+/*Background Image*/
+.bgimg {
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("images/ABSTrip.jpg");
+  min-height: 100%;
+}
+
+/*Projects display grid */
+.row {
+  margin: 6px -12x;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 16px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of three columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- NEW NAV  -->
+
+<div class="w3-top">
+	<div class="w3-bar w3-wide w3-padding ">
+	     <a href="index.html" class="w3-bar-item w3-namefont w3-text-white w3-button">Giselle Onofre</a>
+	    <!-- Float links to the right. Hide them on small screens -->
+	    <div class="w3-right w3-hide-small">
+		    <a href="/index.html#projects" class="w3-bar-item w3-myfont w3-text-white w3-button">Projects</a>
+		    <!-- ABOUT LINK NOT FLESHED OUT ...YEEETTTT!
+          <a href="AboutMe.html" class="w3-bar-item w3-myfont w3-text-white w3-button">About</a>-->
+	    </div>
+	</div>
+</div>
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container " id="home">
+  <div class="w3-display-bottommiddle w3-padding-64">
+   <!--button <p><a href="#menu" class="w3-button w3-small w3-white">Let me see the menu</a></p>
+  </div> -->
+  <div class="w3-center w3-margin-bottom-600">
+    <span class="w3-center w3-text-white" style="font-size:80px">Giselle.Onofre</span>
+    <span class="w3-center w3-text-white" style="font-size:30px"><br></br>Mechanical Engineer</span>
+   
+  </div>
+  </div>
+</header>
+
+<!--Hello-->
+
+
+<div class="w3-container w3-center w3-white w3-padding-64 w3-grayscale">
+    <div class="w3-content w3-center">
+    <h1 class = "w3-center aboutfont">Hello!</h1>
+    <h5 class = "w3-center">
+        I'm Giselle, a mechanical engineering student at Rowan University, constantly exploring
+         new ideas and bringing a creative spark to projects. I'm also an environmental activist,
+          avid 3D printer, and you can find me assembling prosthetic hands from time to time. 
+    </h5>
+    </div>
+</div>
+
+
+<!-- PROJECTS SECTION -->
+<div class=" w3-white w3-xlarge" >
+  
+<h5 class = "w3-center grotesk w3-padding-16" id = "projects"><font color = "gray">PROJECTS</font></h5>
+
+   <!-- Projects Photo Grid-->
+   <div class="w3-row ">
+    <div class="w3-third">
+        <a href = "mechanicalflower.html"><img src="/images/MechE Flower.JPG"  style="width:100%" onclick="onClick(this)" alt="Canoeing again"><a>
+        <a href = "enablehand.html"><img src="/images/CyborgBeast.jpg" style="width:100%" onclick="onClick(this)" alt="3D Printed Prosthetic"></a>
+   </div>
+    
+   <div class="w3-third">
+      <a href = "airengine.html"><img src="/images/airenginehome.JPG" style="width:100%" onclick="onClick(this)" alt="air engine">
+      </a>      
+      <a href = "multitool.html"><img src="/images/multitool.jpg" style="width:100%" onclick="onClick(this)" alt="Multi-Tool">
+      </a>
+   </div>
+
+    <div class="w3-third">
+     <a href = "robotclaw.html"><img src="/images/clawrender.JPG" style="width:100%" onclick="onClick(this)" alt="robot claw">
+      </a>
+    </div>
+
+
+  </div>
+   
+  </div>
+</div>
+ <!-- END GRID -->
+ 
+<!-- Image of location/map -->
+
+
+<!-- Contact 
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some address at some place or call us at 05050515-122330</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+-->
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-xxlarge">
+  <h5>© Giselle Onofre 2020</h5>
+  <h5>All Rights Reserved.</h5>
+</footer>
+
+
+</body>
+</html>
