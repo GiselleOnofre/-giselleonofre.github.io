@@ -60,6 +60,11 @@ body, html {height: 100%}
     width: 100%;
   }
 }
+
+/* Images Clicking Opacity */
+.w3-third img{ opacity: 1; cursor: pointer}
+.w3-third img:hover{opacity: 0.8}
+
 </style>
 <body>
 
@@ -113,28 +118,48 @@ body, html {height: 100%}
 
    <!-- Projects Photo Grid-->
    <div class="w3-row ">
+
     <div class="w3-third">
-        <a href = "mechanicalflower.html"><img src="/images/MechE Flower.JPG"  style="width:100%" onclick="onClick(this)" alt="Canoeing again"><a>
-        <a href = "enablehand.html"><img src="/images/CyborgBeast.jpg" style="width:100%" onclick="onClick(this)" alt="3D Printed Prosthetic"></a>
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Mechanical Flower</div>
+        <a href = "mechanicalflower.html"><img src="/images/flowerhome.JPG"  style="width:100%" onclick="onClick(this)" alt="MechE Flower"><a>
+        </div>
+      </div>
+
+    <div class="w3-third">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">3D Printed Hand</div>
+        <a href = "enablehand.html"><img src="/images/enablehome.JPG" style="width:100%" onclick="onClick(this)" alt="3D Printed Prosthetic"></a>
+        </div>
    </div>
     
    <div class="w3-third">
-      <a href = "airengine.html"><img src="/images/airenginehome.jpg" style="width:100%" onclick="onClick(this)" alt="air engine">
-      </a>      
-      <a href = "multitool.html"><img src="/images/multitool.jpg" style="width:100%" onclick="onClick(this)" alt="Multi-Tool">
-      </a>
-   </div>
-
-    <div class="w3-third">
-     <a href = "robotclaw.html"><img src="/images/clawrender.JPG" style="width:100%" onclick="onClick(this)" alt="robot claw">
-      </a>
+    <div class="w3-display-container">
+      <div class="w3-display-topleft w3-black w3-padding">Scotch Yoke Air Engine</div>
+      <a href = "airengine.html"><img src="/images/airenginehome2.jpg" style="width:100%" onclick="onClick(this)" alt="air engine"></a>   
     </div>
-
-
-  </div>
-   
   </div>
 </div>
+
+<div class="w3-row">
+  <div class="w3-third">
+    <div class="w3-display-container">
+      <div class="w3-display-topleft w3-black w3-padding">Multitool</div>
+      <a href = "multitool.html"><img src="/images/toolhome.JPG" style="width:100%" onclick="onClick(this)" alt="Multi-Tool"></a>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-display-container">
+      <div class="w3-display-topleft w3-black w3-padding">Claw</div>
+     <a href = "robotclaw.html"><img src="/images/clawhome.JPG" style="width:100%" onclick="onClick(this)" alt="robot claw"></a>
+    </div>
+  </div>
+
+
+  </div>
+</div>
+
  <!-- END GRID -->
  
 <!-- Image of location/map -->
