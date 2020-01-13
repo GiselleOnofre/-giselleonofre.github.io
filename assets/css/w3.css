@@ -275,8 +275,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /* Same Size Image Class */
   .crop {
-    height: 260px;
-    width: 600px;
+    height: 400px;
+    width: 300px;
     overflow: hidden;
    }
    .crop img {
@@ -319,3 +319,20 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   margin: 4px 2px;
   cursor: pointer;
 }
+
+/* My BACKGROUND COLORS */
+.blue1{
+  background-color:rgb(38, 0, 141)!important;
+  background-size: cover;
+
+}
+
+.orange2{color:#fff!important;background-color:rgb(231, 105, 33)!important}
+.red1,.hover-blue:hover{color:#fff!important;background-color:rgb(226, 61, 55)!important}
+.yellow1,.hover-blue:hover{
+  color:#fff!important;
+  background-color:rgb(243, 187, 33)!important;
+  background-size: cover;
+
+}
+.orange1,.hover-blue:hover{color:#fff!important;background-color:rgb(17, 121, 206)!important}
