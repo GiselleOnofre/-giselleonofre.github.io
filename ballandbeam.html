@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<title>Ball and Beam</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/w3.css">
+
+<style>
+body, html {height: 100%}
+
+.menu {display: none}
+/*Background Image*/
+.bgimg {
+  background-size: cover;
+  background-position:center;
+  background-image: url("images/ballandbeambg.jpg");
+  min-height: 100%;
+}
+
+
+</style>
+<body>
+
+<!-- NEW NAV  -->
+
+<div class="w3-top">
+	<div class="w3-bar w3-wide w3-padding ">
+	     <a href="index.html" class="w3-bar-item w3-namefont w3-text-white w3-button">Giselle Onofre</a>
+	    <!-- Float links to the right. Hide them on small screens -->
+	    <div class="w3-right w3-hide-small">
+		    <a href="/index.html#projects" class="w3-bar-item w3-myfont w3-text-white w3-button">Projects</a>
+		     <!-- ABOUT LINK NOT FLESHED OUT ...YEEETTTT!
+          <a href="AboutMe.html" class="w3-bar-item w3-myfont w3-text-white w3-button">About</a>-->
+	    </div>
+	</div>
+</div>
+
+
+<!-- HEADER with background image -->
+<header class="bgimg w3-display-container " id="home">
+  <div class="w3-display-middle w3-padding-64">
+   <!--button <p><a href="#menu" class="w3-button w3-small w3-white">Let me see the menu</a></p>
+  </div> -->
+  <div class="w3-center  w3-margin-bottom-64">
+    <span class="w3-text-white" style="font-size:40px"><b>Ball and Beam</b></span> <br>
+    <span class="w3-text-white" style="font-size:20px">System Dynamics and Control Spring 2020</span>
+   
+  </div>
+  </div>
+</header>
+
+<!--PROJECT OVERVIEW-->
+<div class="w3-container w3-white w3-padding-32 w3-grayscale">
+    <div class="w3-content w3-center">
+    <h1 class = "rolefont"> Skills: Mechanical Design, CAD Modeling, Programming, Laser Cutting, 3D Printing, Waterjet Fabrication</h1>
+    <h5 class = "w3-center w3-padding-32">
+        At Rowan University, to gain a greater understanding of feedback loops and PID control, I created a traditional ball and beam 
+        system. The ball and beam system I developed consisted of a dial box enclosure with a 4 digit display to control the location 
+        of the ball along the beam. The ball's location on the beam was measured using a flexible, soft potentiometer sensor, 
+        and the ball was moved using a three-bar linkage controlled by a servo motor actuator. Despite COVID-19 closing down my 
+        university's facilities and resources, I was able rapidly model and fabricate the final parts of my project and complete the 
+        programming portion from my home. Overall, this project grew my skills in circuitry, programming, and product design. 
+    </h5>
+    </div>
+</div>
+
+
+<!-- SOLIDWORKS MODELING -->
+<div class="w3-container w3-padding-16 w3-orange" >
+   <!--PHOTO Left side; DESCRIPTION right side-->
+  <div class="w3-row w3-padding-64" id="about">
+
+    <div class="w3-half w3-center w3-padding-large w3-hide-small">
+     <img src="/images/BallAndBeamRender.JPG" class="w3-round w3-image polaroid" alt="Flower Render" width="600" height="750">
+    </div>
+
+    <div class="w3-half " >
+      <span class="w3-text-white" style="font-size:40px;"><b>SolidWorks Modeling & Assembly</b></span> 
+      <h5 class = "w3-center" style = "max-width:720px">
+          The design was intended to look like a finalized product. To achieve this goal, an enclosure
+          was designed in SolidWorks with engraved dial markings for the user to choose their intended 
+          position on the beam. Likewise, the beam was designed with engraved markings corresponding to
+          the dial positions. To mount the beam, two arcs inspired by the Gateway Arch in St. Louis
+          were created. And to prevent the 1.25 kg steel ball from rolling off the beam, two custom ball 
+          stop ends were designed to fit into the beam. 
+      </h5>
+    </div>
+  </div>
+</div>
+
+<!-- FABRICATION -->
+<div class="w3-container w3-padding-16 w3-indigo" >
+  <!--Three Photo Row-->
+  <div class="W3-padding-64" id="about">
+
+   <div class="w3-half w3-center w3-padding-large w3-hide-small">
+    <img src="/images/DialStain.jpg" class="w3-round w3-image polaroid" alt="Flower Art" width="600" height="750">
+   </div>
+
+   <div class="w3-half w3-padding-large w3-hide-small " >
+    <img src="/images/Arc.jpg" class="w3-round w3-image polaroid" alt="Flower Art" width="600" height="750">
+   </div>
+
+  </div>
+
+   <div class = "w3-center w3-content2 w3-container">
+   <span class=" w3-center" style="font-size:40px;"><b>Art Meets Engineering</b></span> 
+   <h5>
+       The dial enclosure and base plate was fabricated using plywood material on a lasercutter 
+       and stained with an ebony wood finish. The arcs were fabricated on a CNC waterjet and I 
+       gave it a polished finish using a polishing wheel. The beam was fabricated using acrylic
+       material on a laser cutter as well. Given the ball's weight and the force it exerted on 
+       the ends of the beam during PID tuning, the ball stop was fabricated using PLA material 
+       on an FDM 3D printer in order to enhance its durability. 
+   </h5>
+  </div>
+</div>
+
+<!-- Programming-->
+<div class="w3-container w3-padding-16 w3-amber" >
+  <!--PHOTO Left side; DESCRIPTION right side-->
+ <div class="w3-row w3-padding-64" id="about">
+
+   <div class="w3-half w3-center w3-padding-large w3-hide-small">
+    <img src="/images/BallAndBeamCode.png" class="w3-round w3-image polaroid" alt="Flower electronics" width="600" height="750">
+   </div>
+
+   <div class="w3-half w3-container" >
+     <span class="w3-text-white w3-center" style="font-size:40px;"><b>Programming</b></span> 
+        <h5 class = "w3-center" style = "max-width:770px" >
+         This project allowed me to apply my programming knowledge in an entirely new way. The ball
+         and beam was powered using a simple Arduino but I decided to use my extra time in 
+         quarantine to expand my programming knowledge. Arduino IDE has never been my favorite 
+         development environment, so in my search I found that VS Code's Platform IO extension gave
+         all the benefits of a color coded development environment with easy to use search 
+         features that also supported uploading and monitoring to the Arduino board. 
+         I did my best to keep memory usage on the Arduino low in order for the PID function to work
+         at optimal speeds to reach the desired setpoint on the beam. This gave me a broader view on
+         the different types of ints and the importance of memory allocation in code. The PID 
+         library in Arduino I used(credit to Brett Beaureguard) didn't allow me to tune my PID 
+         values as the ball and beam was functioning. To avoid the slow process, of changing PID 
+         values everytime I had to upload and monitor, I programmed a void readString loop to read the type 
+         of control i.e. P, I, or D, and the value. Using the serial plotter in Arduino IDE, I was
+         able to see in real time the time it took for the ball to reach the position, oscillations,
+         and steady state error. Thus allowing me to tune my ball and beam effectively. 
+        </h5>        
+     <div class = "w3-center" style = "max-width:770px">
+         <a class= "button w3-round w3-white polaroid" href="https://www.youtube.com/watch?v=xxsDriRKYpI">Check it Out!</a>
+    </div>
+     </div> 
+   </div> 
+ </div>
+
+ 
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-xxlarge">
+  <h5>© Giselle Onofre 2020</h5>
+  <h5>All Rights Reserved.</h5>
+</footer>
+
+
+</body>
+</html>
