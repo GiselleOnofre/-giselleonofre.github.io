@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<title>Mini Solar Car</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/w3.css">
+
+<style>
+body, html {height: 100%}
+
+.menu {display: none}
+/*Background Image*/
+.bgimg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("images/solarcarbg.JPG");
+  min-height: 100%;
+}
+
+
+</style>
+<body>
+
+<!-- NEW NAV  -->
+
+<div class="w3-top">
+	<div class="w3-bar w3-wide w3-padding ">
+	     <a href="index.html" class="w3-bar-item w3-namefont w3-text-white w3-button">Giselle Onofre</a>
+	    <!-- Float links to the right. Hide them on small screens -->
+	    <div class="w3-right w3-hide-small">
+		    <a href="/index.html#projects" class="w3-bar-item w3-myfont w3-text-white w3-button">Projects</a>
+		     <!-- ABOUT LINK NOT FLESHED OUT ...YEEETTTT!
+          <a href="AboutMe.html" class="w3-bar-item w3-myfont w3-text-white w3-button">About</a>-->
+	    </div>
+	</div>
+</div>
+
+
+<!-- HEADER with background image -->
+<header class="bgimg w3-display-container " id="home">
+  <div class="w3-display-middle w3-padding-64">
+   <!--button <p><a href="#menu" class="w3-button w3-small w3-white">Let me see the menu</a></p>
+  </div> -->
+  <div class="w3-center  w3-margin-bottom-64">
+    <span class="w3-text-white" style="font-size:40px"><b>Miniature Solar Car</b></span> <br>
+    <span class="w3-text-white" style="font-size:20px">Intro to Renewable Energy Spring 2020</span>
+   
+  </div>
+  </div>
+</header>
+
+<!--PROJECT OVERVIEW-->
+
+
+<div class="w3-container w3-white w3-padding-32 w3-grayscale">
+    <div class="w3-content w3-center">
+    <h1 class = "rolefont"> Skills: Mechanical Design, SolidWorks Modeling, Basic Circuitry, Soldering</h1>
+    <h5 style = "text-align:left" class = "w3-padding-32">
+        In my Spring 2020 semester at Rowan University, three mechanical engineering
+        students and I were tasked with designing and fabricating a miniature solar 
+        powered vehicle as part of our Introduction to Renewable Energy course. Unfortunately,
+        due to the Covid-19 pandemic, the project was cancelled. However, I continued forth
+        with the project on my own because I was eager to take on a fun environmental engineering 
+        project! My old teammate gave me the DC motor to mobilize the solar car and I got to start
+        on designing the car. The criteria and constraints of the project were as follows: 
+        <ul class = "w3-left"> 
+          <li>Use one or two Velleman solar cells(2V/200 mA) as the main energy source.</li>
+          <li>Use a JAMECO No. 2158442 DC motor requiring 0.17 A current for max efficiency.</li>
+          <li>The dimensions of the prototype cannot exceed 8" x 6" x 6".</li>
+          <li>The weight of the prototype cannot exceed 2 lb.</li>
+          <li>The cost of the system cannot exceed $30; not including cost of provided DC motor.</li>
+          <li>Secondary, backup energy sources limited to supercapacitors, capacitors, or
+              batteries. These cannot contribute to more than 20% of the energy during the race. </li>
+        </ul>
+    </h5>
+    </div>
+</div>
+
+
+<!-- SOLIDWORKS MODELING -->
+<div class="w3-container w3-padding-16 w3-indigo" >
+   <!--PHOTO Left side; DESCRIPTION right side-->
+  <div class="w3-row w3-padding-64" id="about">
+
+    <div class="w3-half w3-center w3-padding-large w3-hide-small">
+     <img src="/images/solarcarsketch.png" class="w3-round w3-image polaroid" alt="Solar Car Sketch" width="600" height="750">
+    </div>
+
+    <div class="w3-half" >
+      <div class="w3-text-white w3-center" style="font-size:40px; max-width:770px"><b>Planning It Out</b></div> 
+      <h5 class = "w3-center" style = "max-width:770px">
+        The class goal for the solar car was to achieve the fastest race time on a 30 foot racetrack. So with
+        speed still in mind, I decided to make my solar car using 1.5 mm balsa wood sheets as my main material 
+        due to its light weight and high strength. To drive the car, I opted for a simple gear mechanism consisting
+        of a gear on the DC motor and a crown gear on the back axle with a 1:2 gear ratio. I also drew a rough
+        sketch of what I wanted the car to look like before modeling it in SolidWorks.
+
+      </h5>
+    </div>
+  </div>
+</div>
+
+<!-- SolidWorks Assembly Images -->
+<div class="w3-container w3-padding-16 w3-orange " >
+ 
+  <!--Three Photo Row-->
+  <div class="W3-padding-64" id="about">
+   <div class="w3-third w3-center w3-padding-large w3-hide-small">
+    <img src="/images/solarcartrimetricback.JPG" class="w3-round w3-image polaroid" alt="Solar Car Render" width="600" height="750">
+   </div>
+
+   <div class="w3-third w3-padding-large w3-hide-small " >
+    <img src="/images/SolarCarRender.JPG" class="w3-round w3-image polaroid" alt="Solar Car Render" width="600" height="750">
+   </div>
+
+   <div class="w3-third w3-padding-large w3-hide-small" >
+    <img src="/images/solarcarback.JPG" class="w3-round w3-image polaroid" alt="Flower Art" width="600" height="750">
+   </div>
+  </div>
+  
+  <!--Bottom Text-->
+   <div class = "w3-center w3-content2 w3-container">
+   <span class="w3-center" style="font-size:40px;"><b>SolidWorks Modeling and Assembly</b></span> 
+   <h5 class = "">
+       Modeling the parts in SolidWorks was straightforward. I started by modeling the parts I already had in hand
+       including the solar panels, stepper motor, axles, gears, and wheels. Afterwards, going off the rough sketch
+       I had in mind, I started with a 5.5" long chassis and then built the rest of the car body around it. Each 
+       component was designed to fit into a slot in the chassis for easy assembly.                             
+   </h5>
+  </div>
+</div>
+
+<!-- Assembling Solar Car-->
+<div class="w3-container w3-padding-16 w3-red" >
+  <!--PHOTO Left side; DESCRIPTION right side-->
+ <div class="w3-row w3-padding-64" id="about">
+
+   <div class="w3-half w3-center w3-padding-large w3-hide-small">
+    <img src="/images/SolarCarBuilt.JPG" class="w3-round w3-image polaroid" alt="Built Solar Car" width="600" height="750">
+   </div>
+
+   <div class="w3-half w3-center w3-container" >
+     <div class="w3-text-white" style="font-size:40px; max-width:770px"><b>Building the Car</div>
+     <h5 style = "max-width:770px">
+         Once I was satisfied with my SolidWorks Assembly of the car, all that was left was to cut the design out
+         on the balsa wood sheets! Since COVID-19 cut off my access to my university's laser cutter, I resolved to
+         cut out the sheets by hand by tracing my component patterns onto the wood sheets. With all my cut out
+         components in hand, I inserted their end tabs into their respective slots and secured their placement
+         with glue. I soldered the stepper motor to the solar panels and wired the panels in series. I secured
+         my soldering work with heat shrink as well. After putting the gears onto the motor and back axle, and
+         attaching the wheel my car was completed! Overall, this was a fun and simple project that I was eager 
+         to finish.
+         </h5>
+    </div> 
+   <!-- <div class = "w3-center" style = "max-width:770px">
+         <a class= "button w3-round w3-white polaroid" href="https://youtu.be/JQbrcqSMTUk">Check it Out!</a>
+    </div>-->
+     
+   </div> 
+ </div>
+
+
+
+
+
+ 
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-xxlarge">
+  <h5>© Giselle Onofre 2020</h5>
+  <h5>All Rights Reserved.</h5>
+</footer>
+
+
+</body>
+</html>
